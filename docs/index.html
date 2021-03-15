@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Get data from server</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Баскетбольные команды</h1>
+    <header class="header">
+      <nav class="nav">
+        <ul class="header__titles">
+          <li class="header__title">Является национальной</li>
+          <li class="header__title">Страна</li>
+          <li class="header__title">Название</li>
+          <li class="header__title">Короткое название</li>
+        </ul>
+      </nav>
+    </header>
+    <ul class="rows">
+      <div class="preloader flex">
+        <svg
+          class="preloader__svg"
+          width="200"
+          height="200"
+        >
+          <circle
+            class="preloader__circle anim-circle"
+            cx="100"
+            cy="100"
+            r="50"
+            fill="none"
+            stroke-width="8"
+            stroke="#000"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+    </ul>
+    <div class="modal-window">
+      <div class="modal-window__block">
+        <div class="modal-window__block-item">
+          <h3 class="modal-window__title">Ошибка!</h3>
+        </div>
+        <div class="modal-window__block-item">
+          <p class="modal-window__desc">Извините, но произошла ошибка сервера! Перезапустите сайт.</p>
+        </div>
+        <div class="modal-window__block-item">
+          <button class="modal-window__btn">Ок</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>
